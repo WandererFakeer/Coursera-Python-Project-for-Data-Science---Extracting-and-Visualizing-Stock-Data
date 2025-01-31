@@ -29,13 +29,13 @@ def make_graph(stock_data, revenue_data, stock):
     ## The y-axis data is the Close price from stock_data_specific, converted to float using astype("float").
     ## The name for the trace (line) is "Share Price"
     ## It also specifies that this trace should be placed in the first row, first column
-    fig.add_trace(go.Scatter(x = pd.to_datetime(stock_data_specific.Date, infer_datetime_format = True), y = stock_data_specific.Close.astype("float"), name = "Share Price"), row = 1, col = 1)
+    fig.add_trace(go.Scatter(x = pd.to_datetime(stock_data_specific.Date), y = stock_data_specific.Close.astype("float"), name = "Share Price"), row = 1, col = 1)
 
     # Adds a line plot to the figure. The x-axis data is the Date column from revenue_data_specific, which is converted to datetime format using pd.to_datetime().
     ## The y-axis data is the Revenue Data from revenue_data_specific, converted to float using astype("float").
     ## The name for the trace (line) is "Revenue"
     ## It also specifies that this trace should be placed in the second row, first column 
-    fig.add_trace(go.Scatter(x = pd.to_datetime(revenue_data_specific.Date, infer_datetime_format = True), y = revenue_data_specific.Revenue.astype("float"), name = "Revenue"), row = 2, col = 1)
+    fig.add_trace(go.Scatter(x = pd.to_datetime(revenue_data_specific.Date), y = revenue_data_specific.Revenue.astype("float"), name = "Revenue"), row = 2, col = 1)
 
     # Title for x-axis is "Date" for both subplots
     fig.update_xaxes(title_text = "Date", row = 1, col = 1)
