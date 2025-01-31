@@ -1,5 +1,5 @@
-# Extracting and Visualizing Stock Data
-Here I will extract some stock data, and then will display this data in a graph.
+# Extracting and Visualizing Tesla and GameStop Stock Data
+Here I will extract 2 stock data, `Tesla` and `GameStop` and then will display their respective data in graph.
 
 ## Import all the necessary libraries:
 
