@@ -1,3 +1,6 @@
+# Extracting and Visualizing Stock Data
+Here I will extract some stock data, and then will display this data in a graph.
+
 ## Import all the neessary libraries:
 
 ``` 
