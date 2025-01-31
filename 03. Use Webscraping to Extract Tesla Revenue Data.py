@@ -26,7 +26,7 @@ for row in beautiful_soup.find_all("table"):
         date_and_revenue_dataframe = pd.DataFrame([(date_and_revenue_data[idx], date_and_revenue_data[idx + 1]) for idx in range(0, len(date_and_revenue_data), 2)], columns = ["Date", "Revenue"])
 
         # Concats this newly created Dataframe "date_and_revenue_dataframe" with previously created empty Dataframe "tesla_revenue"
-        tesla_revenue = pd.concat([tesla_revenue, date_and_revenue], ignore_index = True)
+        tesla_revenue = pd.concat([tesla_revenue, date_and_revenue_dataframe], ignore_index = True)
 
 
  # Or, (II). Using read_html
