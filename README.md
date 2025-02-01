@@ -138,7 +138,7 @@ tesla_revenue.columns = ["Date", "Revenue"]
 ```
 tesla_revenue["Revenue"] = tesla_revenue['Revenue'].str.replace(r',|\$',"", regex = True)
 
-tesla_revenue.dropna(inplace=True)
+tesla_revenue.dropna(inplace = True)
 
 tesla_revenue = tesla_revenue[tesla_revenue['Revenue'] != ""]
 ```
