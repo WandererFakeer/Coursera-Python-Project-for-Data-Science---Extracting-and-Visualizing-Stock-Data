@@ -37,7 +37,7 @@ tesla_revenue.columns = ["Date", "Revenue"]
 # Remove the comma and dollar sign from the Revenue column, and remove an null or empty strings in the Revenue column.
 tesla_revenue["Revenue"] = tesla_revenue['Revenue'].str.replace(r',|\$',"", regex = True)
 
-tesla_revenue.dropna(inplace=True)
+tesla_revenue.dropna(inplace = True)
 
 tesla_revenue = tesla_revenue[tesla_revenue['Revenue'] != ""]
 
